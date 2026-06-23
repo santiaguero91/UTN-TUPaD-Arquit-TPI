@@ -1,12 +1,10 @@
 # TPI ARQUI - Flask mínimo
 
-App Flask con una sola ruta `/santi` que devuelve "Hola Santi".
-
 ## Correr en la VM Ubuntu
 
 ```bash
 git clone <url-del-repo>
-cd TPI-ARQUI
+cd UTN-TUPaD-Arquit-TPI
 sudo apt update && sudo apt install -y python3-pip python3-venv
 python3 -m venv venv
 source venv/bin/activate
@@ -19,8 +17,9 @@ La app escucha en el puerto 80 de todas las interfaces (`0.0.0.0`), por eso se n
 
 ## Probar desde el SO anfitrión
 
-Con la VM en red puenteada/NAT con IP accesible (por ejemplo `192.168.0.2`):
+En el navegador del SO anfitrión dirigirsa a: http://{ ip del SO invitado } / { nombre del usuario }
 
+Ejemplo: 
 ```
 http://192.168.0.2/santi
 ```
